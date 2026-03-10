@@ -32,6 +32,7 @@ function App() {
           count is {count}
         </button>
         <p>
+          <i className="fa-regular fa-address-card"></i>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>

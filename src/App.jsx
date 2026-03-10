@@ -33,6 +33,9 @@ function App() {
         </button>
         <p>
           <i className="fa-regular fa-address-card"></i>
+          <span className="text-3xl font-bold underline">
+          Hello world!
+          </span>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>

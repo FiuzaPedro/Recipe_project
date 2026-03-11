@@ -1,42 +1,42 @@
+@import './components/Sobre.module.css';
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0rem;  
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.hat_icon {
+  display: inline;  
+  height: 50px;
+  background-color: white;  
+  border-radius: 999em;
+  padding: 2px;
+  animation-name: anim_hat ;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;  
+  
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes anim_hat {
+  0% {
+    rotate: 360deg;
+    transform: rotateY(360deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  50% {
+    rotate: 0deg;
+    transform: rotateY(0deg);
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+/* .div_sobre {
+  background-image: url('./assets/img/paella.jpg.jpeg');
+  background-size: cover;  
+  height: 70vh;
+  
+  & span {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);    
+    justify-content: center; 
+    align-items: center;   
+    width: 100%;    
+  }
+} */

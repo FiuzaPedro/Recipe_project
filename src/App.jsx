@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect } from 'react'
 import './App.css'
+import { getImageUrl } from '../src/utils';
+import {Sobre} from './components/Sobre';
+import { ListaReceitas } from './components/ListaReceitas';
+import { Receita } from './components/Receita';
 
 function App() {
-  const [count, setCount] = useState(0)
   useEffect(() => {
     fetch('/src/receitas.json')
       .then(response => response.json())
@@ -19,29 +20,15 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          <i className="fa-regular fa-address-card"></i>
-          <span className="text-3xl font-bold underline">
-          Hello world!
-          </span>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <h1 id='main_title' className='bg-amber-500 text-e p-5 text-2xl flex items-center'>
+          {/* <a href="https://www.flaticon.com/free-icons/chef-hat" title="chef hat icons">Chef hat icons created by Graphix's Art - Flaticon</a> */}
+          <img className='hat_icon mr-1' src={getImageUrl('food.png')} alt="cook hat icon" />
+          <span className='text-white'>Receitas da Isabel</span>
+        </h1>
+      </div>      
+      <Sobre />
+      <ListaReceitas />
+      <Receita />
     </>
   )
 }

@@ -1,4 +1,4 @@
-{
+export const receitas = [{
   "title": "Receitas",  
   "categories": [
     {
@@ -251,4 +251,4 @@
       ]
     }
   ]
-}
+}]

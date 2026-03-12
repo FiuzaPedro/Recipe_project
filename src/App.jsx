@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import './App.css'
 import { getImageUrl } from '../src/utils';
 import {Sobre} from './components/Sobre';
@@ -6,17 +5,6 @@ import { ListaReceitas } from './components/ListaReceitas';
 import { Receita } from './components/Receita';
 
 function App() {
-  useEffect(() => {
-    fetch('/src/receitas.json')
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);  
-      })
-      .catch(error => {
-        console.log('Error:', error);  
-      });
-  }, []); 
-
   return (
     <>
       <div>
@@ -27,8 +15,7 @@ function App() {
         </h1>
       </div>      
       <Sobre />
-      <ListaReceitas />
-      <Receita />
+      <footer className='p-3 bg-gray-700 text-white text-center'>Designed by Pedro Fiúza&copy;2026</footer>      
     </>
   )
 }

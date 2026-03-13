@@ -6,7 +6,11 @@ export const ListaReceitas = () => {
 
   // function to show respective recipes according to their category
   function openReceitasByCategory(e) {    
-    e.preventDefault();    
+    e.preventDefault();        
+    document.querySelectorAll('.categoria_item').forEach(item=> {      
+      item.classList.remove('active');
+    })
+    document.getElementById(e.target.id).parentNode.classList.add('active');
     all_receitas[0].categories.map(receita => {      
       receita.id === e.target.id ? setReceitas(receita.recipes) : "";         
     })    
@@ -24,7 +28,11 @@ export const ListaReceitas = () => {
       </ul>      
       
       <div className="all_receitas_wrapper" id='all_receitas'>        
-        {receitas.map((value, key)=>{ return <h1 key={key} className='bg-red-700 text-white'>{value.name}</h1>})}            
+        {receitas.map((value, key)=>{ 
+          return <p key={key} className='bg-amber-500 text-white'>
+            <a href="#">{value.name}</a>
+            </p>
+          })}            
       </div>      
     </div>
   )

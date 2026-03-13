@@ -3,7 +3,7 @@ import { getImageUrl } from '../utils'
 export const Sobre = () => {
     return<>
         <div className='div_sobre flex'>
-            <h2 className='text-6xl text-white'>Receitas portuguesas caseiras</h2>
+            <h2 className='text-6xl text-white'>Receitas caseiras da Isa</h2>
         </div>
         <div className='welcome_card flex p-6'>
             <div className='welcome_img_wrapper w-1/2 h-1/2 mr-10'>

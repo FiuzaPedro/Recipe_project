@@ -16,5 +16,9 @@
 }
 .all_receitas_wrapper {
     height: 400px;
-    background-color: rgba(255, 255, 255, 0.7);    
+    background-color: rgba(255, 255, 255, 0.7);     
+}
+.active {
+    background-color: oklch(76.9% 0.188 70.08);
+    color:white;
 }

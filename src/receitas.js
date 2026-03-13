@@ -1,4 +1,4 @@
-export const receitas = [{
+export const all_receitas = [{
   "title": "Receitas",  
   "categories": [
     {

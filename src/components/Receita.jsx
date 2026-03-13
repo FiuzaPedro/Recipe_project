@@ -5,3 +5,5 @@ export const Receita = () => {
     <div className='text-red-500 bg-amber-900'>Receita</div>
   )
 }
+
+export default Receita

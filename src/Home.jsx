@@ -1,10 +1,8 @@
-import './App.css'
-import { getImageUrl } from '../src/utils';
+import './Home.css'
+import { getImageUrl } from './utils';
 import {Sobre} from './components/Sobre';
-import { ListaReceitas } from './components/ListaReceitas';
-import { Receita } from './components/Receita';
 
-function App() {
+function Home() {
   return (
     <>
       <div>
@@ -20,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default Home

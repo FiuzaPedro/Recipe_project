@@ -1,6 +1,7 @@
 .receita_list_container {
     background-image: url('../assets/img/kitchen_list_medium.jpg');    
-    height: 100vh;
+    background-size: cover;
+    background-color: oklch(76.9% 0.188 70.08) !important;    
 }
 .receita_list {    
     display: inline-flex;
@@ -14,11 +15,56 @@
         transition: 0.3s ease-in-out all;
     }
 }
-.all_receitas_wrapper {
-    height: 400px;
-    background-color: rgba(255, 255, 255, 0.7);     
-}
 .active {
     background-color: oklch(76.9% 0.188 70.08);
     color:white;
+}
+
+/* receitas grid system */
+.all_receitas_wrapper {    
+    height: 1000px;   
+    width: 100%;         
+    padding: 10px;
+    color: floralwhite;
+}
+.receitas_wrapper {
+    display: grid;
+    grid-template:  repeat( auto-fit, minmax(200px, 1fr) ) / repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    text-align: center;
+    & img {
+        height: 100px;
+    }
+}
+.receita_card {
+    padding: 10px;    
+    border-radius: 5px;
+    border: 10px solid lightgray;
+    background-color: rgba(255,255,255,0.8);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EB0029;
+}
+.link_receita {
+    margin-top: 20px;    
+    background-color: oklch(76.9% 0.188 70.08);
+    color: #ffffff;
+    text-align: center;
+    min-width: 180px;    
+    line-height: 50px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: "Poppins";
+    text-transform: capitalize;
+    transition: 0.5s ease-in-out;
+    z-index: 1111;
+    border-radius: 999em;    
+    &:hover {
+        background-color: #EB0029; 
+    }
 }

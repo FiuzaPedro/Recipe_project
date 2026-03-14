@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { all_receitas } from '../receitas';
+import { getImageUrl } from '../utils';
 
 export const ListaReceitas = () => {    
   const [receitas, setReceitas] = useState([]);
@@ -27,12 +28,20 @@ export const ListaReceitas = () => {
         })}
       </ul>      
       
-      <div className="all_receitas_wrapper" id='all_receitas'>        
-        {receitas.map((value, key)=>{ 
-          return <p key={key} className='bg-amber-500 text-white'>
-            <a href="#">{value.name}</a>
-            </p>
-          })}            
+      <div className="all_receitas_wrapper " id='all_receitas'>        
+        {receitas.length === 0 ? 
+          <h1 className='text-6xl mt-10 w-full text-center'>Escolha a categoria desejada</h1>
+          : ""
+        }
+        <div className="receitas_wrapper">
+          {receitas.map((value, key)=>{
+            return <div key={key} className=' text-white receita_card'>
+              <h2 className='text-2xl'>{value.name}</h2>
+              <img src={getImageUrl('tartemaca.jpg')} alt="respective recipe image" />
+              <a href="#" className='link_receita'>Ver Receita</a>
+              </div>
+            })}
+        </div>            
       </div>      
     </div>
   )

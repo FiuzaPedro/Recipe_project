@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { all_receitas } from '../receitas';
 import { getImageUrl } from '../utils';
+import { Link } from 'react-router';
 
 export const ListaReceitas = () => {    
   const [receitas, setReceitas] = useState([]);
@@ -35,10 +36,19 @@ export const ListaReceitas = () => {
         }
         <div className="receitas_wrapper">
           {receitas.map((value, key)=>{
+            let currentIngredients = [];
+            currentIngredients.push(value.ingredients);
+            console.log(currentIngredients);
+            
             return <div key={key} className=' text-white receita_card'>
               <h2 className='text-2xl'>{value.name}</h2>
-              <img src={getImageUrl('tartemaca.jpg')} alt="respective recipe image" />
-              <a href="#" className='link_receita'>Ver Receita</a>
+              <img src={getImageUrl('tartemaca.jpg')} alt="respective recipe image" />              
+              <Link 
+                to="/receita" 
+                state={{ receitaname: value.name, ingredients: value.ingredients, instructions: value.instructions }} 
+                className='link_receita'>
+              Ver Receita
+              </Link>              
               </div>
             })}
         </div>            

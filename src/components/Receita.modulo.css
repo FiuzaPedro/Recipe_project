@@ -1,0 +1,36 @@
+.receita_wrapper {
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    padding: 20px;    
+}
+.receita {
+    box-shadow: 0px 0px 10px lightgray  ;
+    border-radius: 2px;
+    background-color: #F7FFE9;
+    margin: 10px auto;
+    width: 100%;
+    padding: 10px;
+    & img {
+        height: 350px;
+        margin-right: 50px;
+    }
+    &.details_wrapper {
+        justify-self: center;
+    }
+    & ul li {        
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        & i {
+            font-size: 8px;
+        }
+    }
+    & .instructions_list {
+        list-style-type: decimal;
+        list-style-position: inside;
+    }
+}

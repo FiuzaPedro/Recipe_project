@@ -1,5 +1,6 @@
 @import './components/Sobre.module.css';
 @import './components/ListaReceitas.module.css';
+@import './components//Receita.modulo.css';
 
 #root {
   max-width: 1280px;

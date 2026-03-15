@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import Home from './Home.jsx'
 import ListaReceitas from './components/ListaReceitas.jsx'
+import Receita from './components/Receita.jsx'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "receitas",
     element: <ListaReceitas />
+  },
+  {
+    path: "receita",
+    element: <Receita />
   }
 ]);
 

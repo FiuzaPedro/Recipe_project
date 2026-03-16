@@ -7,7 +7,7 @@ export const Sobre = () => {
         </div>
         <div className='welcome_card flex p-6'>
             <div className='welcome_img_wrapper w-1/2 h-1/2 mr-10'>
-                <img src={getImageUrl('tartemaca.jpg')} alt="welcome food image" />
+                <img className='image_welcome' src={getImageUrl('tartemaca.jpg')} alt="welcome food image" />
             </div>
             <div className="welcome_text_wrapper">
                  <div className="title-sec">

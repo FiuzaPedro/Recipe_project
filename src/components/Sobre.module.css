@@ -75,3 +75,20 @@
     transition: 0.5s ease-in-out;
     z-index: 1111;
 }
+@media screen and (max-width: 850px) {
+  .div_sobre {
+    background-image: url('../assets/img/paella.jpg');
+    background-size:cover;   
+    background-repeat: no-repeat;
+    height: 50vh;
+    & h2{
+      font-size: 38px !important;
+    }
+  }
+  .welcome_img_wrapper {
+    display: none;
+  }
+  .welcome_card {
+    padding-bottom: 100px;
+  }
+}

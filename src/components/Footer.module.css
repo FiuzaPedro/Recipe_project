@@ -38,3 +38,16 @@ footer {
         color: oklch(76.9% 0.188 70.08);       
     }
 }
+@media screen and (max-width: 850px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+    .author_info {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .social_item {
+        font-size: 14px;
+    }
+}

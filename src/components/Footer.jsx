@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className=' bg-gray-700 text-white text-center'>
         <div className='flex flex-col justify-center'>
             <img className='footer_image' src={getImageUrl('fiuzaprofilepic.jpg')} alt="my profile image" />
-            <p className='italic font-bold text-2xl'>Designed by Pedro Fiúza &copy; 2026</p>
+            <p className='author_info italic font-bold text-2xl'>Designed by Pedro Fiúza &copy; 2026</p>
         </div>
         <div className="social">
             <ul className='social_list'>

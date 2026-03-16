@@ -1,6 +1,7 @@
 @import './components/Sobre.module.css';
 @import './components/ListaReceitas.module.css';
 @import './components//Receita.modulo.css';
+@import './components/Footer.module.css';
 
 #root {
   max-width: 1280px;

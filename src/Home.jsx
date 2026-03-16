@@ -1,6 +1,7 @@
 import './Home.css'
 import { getImageUrl } from './utils';
 import {Sobre} from './components/Sobre';
+import { Footer } from './components/Footer';
 
 function Home() {
   return (
@@ -13,7 +14,8 @@ function Home() {
         </h1>
       </div>      
       <Sobre />
-      <footer className='p-3 bg-gray-700 text-white text-center'>Designed by Pedro Fiúza&copy;2026</footer>      
+      <Footer />
+      
     </>
   )
 }

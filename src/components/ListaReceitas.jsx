@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { all_receitas } from '../receitas';
 import { getImageUrl } from '../utils';
 import { Link } from 'react-router';
+import { Footer } from './Footer';
 
 export const ListaReceitas = () => {    
   const [receitas, setReceitas] = useState([]);
@@ -52,7 +53,8 @@ export const ListaReceitas = () => {
               </div>
             })}
         </div>            
-      </div>      
+      </div>   
+      <Footer />   
     </div>
   )
 }

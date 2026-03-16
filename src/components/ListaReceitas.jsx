@@ -18,10 +18,15 @@ export const ListaReceitas = () => {
       receita.id === e.target.id ? setReceitas(receita.recipes) : "";         
     })    
   }
+  
+  //function to scroll back up
+  function scrollUp() {
+    document.getElementById('lista_title')?.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <div className='receita_list_container'>
-      <h2 className="bg-amber-500 p-2 text-white text-3xl">Lista de Receitas</h2>      
+      <h2 id='lista_title' className="bg-amber-500 p-2 text-white text-3xl">Lista de Receitas</h2>      
       <ul className='receita_list'>        
         {all_receitas[0].categories.map((cat, key) => {
             return <li key={key} className='categoria_item p-3'>
@@ -39,7 +44,6 @@ export const ListaReceitas = () => {
           {receitas.map((value, key)=>{
             let currentIngredients = [];
             currentIngredients.push(value.ingredients);
-            console.log(currentIngredients);
             
             return <div key={key} className=' text-white receita_card'>
               <h2 className='text-2xl'>{value.name}</h2>
@@ -54,7 +58,10 @@ export const ListaReceitas = () => {
             })}
         </div>            
       </div>   
-      <Footer />   
+      <Footer /> 
+      <div className="arrow" onClick={scrollUp}>
+        <i className="fa-solid fa-circle-arrow-up text-5xl text-amber-500"></i>
+      </div>
     </div>
   )
 }

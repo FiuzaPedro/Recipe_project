@@ -35,3 +35,18 @@
         list-style-position: inside;
     }
 }
+@media screen and (max-width: 850px) {
+    .nav_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .receita {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & img {
+            height: 50%;
+            margin-right: 0;
+    }
+    }
+}

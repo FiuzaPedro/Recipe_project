@@ -14,7 +14,7 @@ export const Receita = () => {
     
   return (
     <div className='receita_wrapper border-gray-300 border-2'>
-      <div className='bg-amber-700 p-3'>
+      <div className='bg-amber-700 p-3 nav_wrapper'>
         <a href="/" className='text-white font-bold mr-3  hover:text-amber-400'>
           <i className="fa-solid fa-home text-3xl align-middle"></i>
           Homepage

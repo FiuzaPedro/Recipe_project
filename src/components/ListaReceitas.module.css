@@ -6,7 +6,8 @@
     background-size: cover;
     background-color: oklch(76.9% 0.188 70.08) !important;    
 }
-.receita_list {    
+.receita_list {   
+    transition: 0.6s ease-in-out all; 
     display: inline-flex;
     justify-content: space-around;
     flex-wrap: nowrap;
@@ -20,6 +21,7 @@
         transition: 0.5s ease-in-out all;                
     }
 }
+.menu_wrapper { & span {display: none;}}
 .active {
     background-color: oklch(76.9% 0.188 70.08);
     color:white;
@@ -31,6 +33,12 @@
     width: 100%;         
     padding: 10px;
     color: floralwhite;
+    & h1 {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 75%;
+        margin: 10% auto;
+        padding: 20px;
+    }
 }
 .receitas_wrapper {
     display: grid;
@@ -80,6 +88,9 @@
     50% {transform: scale(1.2);}
     100% {transform: scale(1);}
 }
+
+
+/* lista receitas media query */
 @media screen and (max-width: 850px) {
     .arrow {
         display: block;
@@ -100,11 +111,12 @@
     .receita_card {
         background-color: rgba(255,255,255,0.9);
     }
+    .menu_wrapper { & span {display: block;}}
     .receita_list {
+        margin-left: -100%;
         display: flex;
         flex-direction: column;
-        justify-content:flex-start;
-        
+        justify-content:flex-start;        
         width: 100%;        
         font-size: 12px;    
         & li {border-radius: 0px;}    
@@ -116,6 +128,33 @@
         height: auto;
         & h1 {
             margin-bottom: 100vh;
-        }        
+            width: 100%;            
+            padding: 20px;
+            font-size: 2em;
+        }                
     }
+}
+
+#receita_h1 {
+    animation-name: anim_lista_title;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes anim_lista_title {
+    0% {scale:0}
+    100% { scale: 1;}
+}
+@keyframes anim_receita_list {
+    0% {margin-left: -100%;}
+    100% {margin-left: 0;}
+}
+@keyframes anim_nav {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@media screen and (min-width:851px) {
+    #receita_list {animation: anim_receita_list 1.5s ; animation-fill-mode: both;}
+    #menu_wrapper {animation: anim_nav 2.5s ; animation-fill-mode: both;}
+    .receita_card {animation: anim_receita_list .5s ; animation-fill-mode: both;}
 }

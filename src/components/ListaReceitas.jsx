@@ -71,10 +71,12 @@ export const ListaReceitas = () => {
             
             return <div key={key} className=' text-white receita_card'>
               <h2 className='text-2xl'>{value.name}</h2>
-              <img src={getImageUrl('tartemaca.jpg')} alt="respective recipe image" />              
+              <img src={getImageUrl( value.id +'.png')} alt="respective recipe image" />              
+              {console.log(value.id)
+              }
               <Link 
                 to="/receita" 
-                state={{ receitaname: value.name, ingredients: value.ingredients, instructions: value.instructions }} 
+                state={{ image: value.id +'.png', receitaname: value.name, ingredients: value.ingredients, instructions: value.instructions }} 
                 className='link_receita'>
               Ver Receita
               </Link>              

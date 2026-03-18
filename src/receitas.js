@@ -195,7 +195,45 @@ export const all_receitas = [{
       "recipes": [
         {
           "id": "tarte_de_limao",
-          "name": "Tarte de Limão"
+          "name": "Tarte de Limão",
+          "ingredients": [
+            {"name": "Manteiga", "quantity": "125 gr"},
+            {"name": "Bolacha Maria", "quantity": "200 gr"},
+            {"name": "Ovos", "quantity": "3"},
+            {"name": "Limões médios", "quantity": "2"},
+            {"name": "Lata de leite condensado", "quantity" : "1"},
+            {"name": "Colheres de sopa de açúcar", "quantity" : "2"}
+          ],
+          "instructions": [
+            "Picar bolachas.",
+            "Misturar com manteiga.",
+            "Preparar recheio com limão e ovos.",
+            "Levar ao forno.",
+            "Cobrir com merengue e levar novamente ao forno."
+          ]
+        },
+        {
+          "id": "tarte_de_pinhao",
+          "name": "Tarte de Pinhão",
+          "ingredients":[
+            { "name": "Farinha (para a massa)", "quantity": "200g"},
+            { "name": "Margarina (para a massa)", "quantity": "100g"},
+            { "name": "Ovos (para a massa)", "quantity": "1"},
+            { "name": "Fermento (para a massa)", "quantity": "1 colher de chá"},            
+            { "name": "Açúcar (para a massa)", "quantity": "100g"},
+            { "name": "Açúcar (para o recheio)", "quantity": "100g"},
+            { "name": "Manteiga Derretida (para o recheio)", "quantity": "125g"},
+            { "name": "Pinhões (para o recheio)", "quantity": "100g ou mais"},
+            { "name": "Leite (para o recheio)", "quantity": "4 colheres de sopa"},
+          ],
+          "instructions": [
+            "Para o recheio, misturar tudo e levar ao lume até ficar espesso.",
+            "Amassar um pouco os ingredientes.",
+            "Deixar descansar uns minutos.",
+            "Untar uma forma de tarte (ou usar papel vegetal para cobrir a forma), cobrir com a massa e encher com o recheio.",
+            "ai ao forno alguns minutos para cozer a massa (10-20 min).",
+            "Observação: Se for tarte de amêndoas, deixar mais tempo no forno."
+          ]
         },
         {
           "id": "cheesecake",

@@ -1,12 +1,14 @@
-import React from 'react'
 import { getImageUrl } from '../utils';
 import { useLocation } from 'react-router';
 import { Footer } from './Footer';
+import { useEffect } from 'react';
 
 
-export const Receita = () => {
-  const location = useLocation();  
-  console.log(location);
+export const Receita = () => {  
+  useEffect(()=> {
+    document.addEventListener('onload', window.scrollTo({top:0, left:0, behavior:'smooth'}));
+  },[])
+  const location = useLocation();    
   
   let { receitaname, ingredients, instructions, image } = location.state;
   if(ingredients === undefined || instructions === undefined) {

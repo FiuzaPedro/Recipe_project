@@ -237,7 +237,24 @@ export const all_receitas = [{
         },
         {
           "id": "cheesecake",
-          "name": "Cheesecake"
+          "name": "Cheesecake",
+          "ingredients": [
+            {"name": "Manteiga", "quantity": "85g"},
+            {"name": "Bolacha de aveia", "quantity": "10"},
+            {"name": "Requeijão", "quantity": "350g"},
+            {"name": "Limões", "quantity": "1 a 2"},
+            {"name": "Gelatina", "quantity": "15 g "},
+            {"name": "Gemas", "quantity": "2"},
+            {"name": "Nata", "quantity": "1,5 dl "},
+            {"name": "Açúcar", "quantity": "115g"}
+          ],
+          "instructions": [
+            "Preparar base.",
+            "Bater recheio.",
+            "Adicionar gelatina.",
+            "Levar ao frio.",
+            "Cobrir com doce."
+          ]
         },
         {
           "id": "tarte_de_maca",
@@ -262,31 +279,231 @@ export const all_receitas = [{
       "id": "carnes",
       "name": "Carnes",
       "recipes": [
-        {"id": "peru_recheado", "name": "Peru Recheado"},
-        {"id": "carne_assada_forno", "name": "Carne Assada no Forno"},
-        {"id": "perna_borrego_forno", "name": "Perna de Borrego no Forno"},
-        {"id": "feijoada", "name": "Feijoada"},
-        {"id": "gulash", "name": "Gulash"},
-        {"id": "arroz_de_pato", "name": "Arroz de Pato"},
-        {"id": "almondegas", "name": "Almôndegas"},
-        {"id": "empada", "name": "Empada"},
-        {"id": "rolo_de_carne", "name": "Rolo de Carne Picada"},
-        {"id": "croquetes", "name": "Croquetes de Carne"}
+        {
+          "id": "peru_recheado",
+          "name": "Peru Recheado",
+          "sections": [
+            {
+              "name": "Recheio",
+              "ingredients": [
+                {"name": "Pão de forma", "quantity": "1 grande"},
+                {"name": "Ovos", "quantity": "5 (4 gemas + 1 inteiro)"},
+                {"name": "Miúdos de galinha ou peru", "quantity": "q.b."},
+                {"name": "Azeitonas pretas", "quantity": "q.b."},
+                {"name": "Vinagre", "quantity": "q.b."},
+                {"name": "Vinho do Porto", "quantity": "q.b."},
+                {"name": "Noz moscada", "quantity": "q.b."},
+                {"name": "Salsa", "quantity": "q.b."},
+                {"name": "Sal e pimenta", "quantity": "q.b."}
+              ]
+            },
+            {
+              "name": "Para assar",
+              "ingredients": [
+                {"name": "Tiras de bacon", "quantity": "q.b."},
+                {"name": "Toucinho", "quantity": "q.b."}
+              ]
+            }
+          ],
+          "instructions": [
+            "Marinar o peru de véspera em água salgada com limão.",
+            "Preparar o recheio com pão, miúdos e temperos.",
+            "Rechear o peru e coser as aberturas.",
+            "Cobrir com bacon e assar a 190ºC por cerca de 3–3.5h."
+          ]
+        },
+        {
+          "id": "carne_assada_forno",
+          "name": "Carne Assada no Forno",
+          "ingredients": [
+            {"name": "Carne de vaca", "quantity": "q.b."},
+            {"name": "Natas", "quantity": "q.b."},
+            {"name": "Mostarda", "quantity": "q.b."},
+            {"name": "Azeite", "quantity": "q.b."},
+            {"name": "Alho", "quantity": "q.b."},
+            {"name": "Pimentão doce", "quantity": "q.b."},
+            {"name": "Louro", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Barrar a carne com natas e mostarda e refrigerar.",
+            "Selar a carne.",
+            "Temperar e levar ao forno.",
+            "Finalizar com o molho reservado."
+          ]
+        },
+        {
+          "id": "perna_borrego_forno",
+          "name": "Perna de Borrego no Forno",
+          "ingredients": [
+            {"name": "Borrego", "quantity": "q.b."},
+            {"name": "Azeite", "quantity": "q.b."},
+            {"name": "Alho", "quantity": "q.b."},
+            {"name": "Pimentão doce", "quantity": "q.b."},
+            {"name": "Louro", "quantity": "q.b."},
+            {"name": "Limão", "quantity": "q.b."},
+            {"name": "Vinho branco", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Temperar de véspera.",
+            "Assar a 180ºC por 1h.",
+            "Aumentar para 200ºC e dourar.",
+            "Adicionar batatas e finalizar."
+          ]
+        },
+        {
+          "id": "feijoada",
+          "name": "Feijoada",
+          "ingredients": [
+            {"name": "Feijão manteiga", "quantity": "q.b."},
+            {"name": "Carnes variadas", "quantity": "q.b."},
+            {"name": "Chouriços", "quantity": "q.b."},
+            {"name": "Alho, louro, salsa", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Cozer as carnes.",
+            "Fazer refogado.",
+            "Juntar feijão e carnes.",
+            "Deixar apurar."
+          ]
+        },
+        {
+          "id": "gulash",
+          "name": "Gulash",
+          "ingredients": [
+            {"name": "Carne de vaca", "quantity": "1 kg"},
+            {"name": "Cebolas", "quantity": "4"},
+            {"name": "Tomate", "quantity": "3-4"},
+            {"name": "Pimentos", "quantity": "2"},
+            {"name": "Paprika", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Refogar cebolas.",
+            "Adicionar carne.",
+            "Juntar legumes e temperos.",
+            "Cozinhar lentamente ~1h."
+          ]
+        },
+        {
+          "id": "arroz_de_pato",
+          "name": "Arroz de Pato",
+          "ingredients": [
+            {"name": "Pato", "quantity": "q.b."},
+            {"name": "Arroz", "quantity": "q.b."},
+            {"name": "Chouriço", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Cozer o pato.",
+            "Desfiar.",
+            "Fazer refogado.",
+            "Levar ao forno."
+          ]
+        }
       ]
     },
     {
-      "id": "peixe_marisco",
+      "id": "peixes_mariscos",
       "name": "Peixes e Mariscos",
       "recipes": [
-        {"id": "bacalhau_gomes_sa", "name": "Bacalhau à Gomes de Sá"},
-        {"id": "bacalhau_bras", "name": "Bacalhau à Brás"},
-        {"id": "pudim_peixe", "name": "Pudim de Peixe"},
-        {"id": "pasteis_bacalhau", "name": "Pastéis de Bacalhau"},
-        {"id": "pataniscas", "name": "Pataniscas de Bacalhau"},
-        {"id": "souffle_atum", "name": "Soufflé de Atum"},
-        {"id": "ovos_verdes", "name": "Ovos Verdes"},
-        {"id": "arroz_marisco", "name": "Arroz de Marisco"}
+        {
+          "id": "bacalhau_gomes_sa",
+          "name": "Bacalhau à Gomes de Sá",
+          "ingredients": [
+            {"name": "Bacalhau", "quantity": "500 g"},
+            {"name": "Batatas", "quantity": "500 g"},
+            {"name": "Cebolas", "quantity": "3"},
+            {"name": "Azeite", "quantity": "1 dl"}
+          ],
+          "instructions": [
+            "Demolhar o bacalhau em leite.",
+            "Refogar cebola.",
+            "Juntar batatas e bacalhau.",
+            "Levar ao forno."
+          ]
+        },
+        {
+          "id": "bacalhau_bras",
+          "name": "Bacalhau à Brás",
+          "ingredients": [
+            {"name": "Bacalhau", "quantity": "400 g"},
+            {"name": "Batata palha", "quantity": "500 g"},
+            {"name": "Ovos", "quantity": "4"}
+          ],
+          "instructions": [
+            "Refogar cebola.",
+            "Juntar bacalhau e batata.",
+            "Adicionar ovos mexidos."
+          ]
+        },
+        {
+          "id": "pasteis_bacalhau",
+          "name": "Pastéis de Bacalhau",
+          "ingredients": [
+            {"name": "Bacalhau", "quantity": "500 g"},
+            {"name": "Batata", "quantity": "400 g"},
+            {"name": "Ovos", "quantity": "4-8"}
+          ],
+          "instructions": [
+            "Misturar tudo.",
+            "Formar pastéis.",
+            "Fritar."
+          ]
+        },
+        {
+          "id": "arroz_marisco",
+          "name": "Arroz de Marisco",
+          "ingredients": [
+            {"name": "Camarão", "quantity": "q.b."},
+            {"name": "Mexilhão", "quantity": "q.b."},
+            {"name": "Arroz", "quantity": "q.b."},
+            {"name": "Tomate", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Cozer marisco.",
+            "Fazer refogado.",
+            "Adicionar arroz.",
+            "Finalizar com coentros."
+          ]
+        }
       ]
     }
+    
+    // {
+    //   "id": "carnes",
+    //   "name": "Carnes",
+    //   "recipes": [
+    //     {"id": "peru_recheado", "name": "Peru Recheado"},
+    //     {"id": "carne_assada_forno", "name": "Carne Assada no Forno"},
+    //     {"id": "perna_borrego_forno", "name": "Perna de Borrego no Forno"},
+    //     {"id": "feijoada", "name": "Feijoada"},
+    //     {"id": "gulash", "name": "Gulash"},
+    //     {"id": "arroz_de_pato", "name": "Arroz de Pato"},
+    //     {"id": "almondegas", "name": "Almôndegas"},
+    //     {"id": "empada", "name": "Empada"},
+    //     {"id": "rolo_de_carne", "name": "Rolo de Carne Picada"},
+    //     {"id": "croquetes", "name": "Croquetes de Carne"}
+    //   ]
+    // },
+    // {
+    //   "id": "peixe_marisco",
+    //   "name": "Peixes e Mariscos",
+    //   "recipes": [
+    //     {"id": "bacalhau_gomes_sa", "name": "Bacalhau à Gomes de Sá"},
+    //     {"id": "bacalhau_bras", "name": "Bacalhau à Brás"},
+    //     {"id": "pudim_peixe", "name": "Pudim de Peixe"},
+    //     {"id": "pasteis_bacalhau", "name": "Pastéis de Bacalhau"},
+    //     {"id": "pataniscas", "name": "Pataniscas de Bacalhau"},
+    //     {"id": "souffle_atum", "name": "Soufflé de Atum"},
+    //     {"id": "ovos_verdes", "name": "Ovos Verdes"},
+    //     {"id": "arroz_marisco", "name": "Arroz de Marisco"}
+    //   ]
+    // }
   ]
 }]
+
+
+
+
+
+
+    
+ 

@@ -28,13 +28,17 @@ export const ListaReceitas = () => {
   //global var to change state of the receita list in the mobile view
   var currentState;          
   //function to show sidemenu in mobile
-  function toggle_menu() {    
+  function toggle_menu() {
+    let receitas_list_height = document.getElementById('receita_list').offsetHeight;
+        
     if(currentState === "open"  ) {
       document.getElementById('receita_list').style.marginLeft = "-100%";
+      document.getElementById('all_receitas').style.marginTop = "-"+ receitas_list_height + "px";
       currentState = "closed";      
       document.querySelector('em').innerText ='Ver Lista';
     } else {
-      document.getElementById('receita_list').style.marginLeft = 0;      
+      document.getElementById('receita_list').style.marginLeft = 0; 
+      document.getElementById('all_receitas').style.marginTop = 0;     
       currentState = "open";
       document.querySelector('em').innerText ='Esconder Lista';
     }
@@ -71,9 +75,7 @@ export const ListaReceitas = () => {
             
             return <div key={key} className=' text-white receita_card'>
               <h2 className='text-2xl'>{value.name}</h2>
-              <img src={getImageUrl( value.id +'.png')} alt="respective recipe image" />              
-              {console.log(value.id)
-              }
+              <img src={getImageUrl( value.id +'.png')} alt="respective recipe image" />                            
               <Link 
                 to="/receita" 
                 state={{ image: value.id +'.png', receitaname: value.name, ingredients: value.ingredients, instructions: value.instructions }} 

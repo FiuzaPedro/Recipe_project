@@ -125,7 +125,131 @@ export const all_receitas = [{
             "Misturar farinha e avelãs.",
             "Levar ao forno 30 minutos a 180°C."
           ]
+        },
+        {
+          "id": "crepes",
+          "name": "Crepes",
+          "ingredients": [
+            {"name": "Farinha", "quantity": "1 chávena"},
+            {"name": "Sal", "quantity": "1 pitada"},
+            {"name": "Ovos", "quantity": "2"},
+            {"name": "Leite", "quantity": "1 + 1/4 chávena (aprox.)"},
+            {"name": "Manteiga derretida", "quantity": "1/4 chávena"}
+          ],
+          "instructions": [
+            "Misturar farinha e sal.",
+            "Adicionar ovos e metade do leite.",
+            "Bater e juntar restante leite e manteiga.",
+            "Cozinhar numa frigideira untada formando crepes finos."
+          ]
+        },
+        {
+          "id": "panquecas",
+          "name": "Panquecas (Americanas)",
+          "ingredients": [
+            {"name": "Leite", "quantity": "3/4 chávena"},
+            {"name": "Vinagre", "quantity": "2 colheres sopa"},
+            {"name": "Farinha", "quantity": "1 chávena"},
+            {"name": "Açúcar", "quantity": "2 colheres sopa"},
+            {"name": "Fermento", "quantity": "1 colher chá"},
+            {"name": "Bicarbonato", "quantity": "1/2 colher chá"},
+            {"name": "Sal", "quantity": "1/2 colher chá"},
+            {"name": "Ovo", "quantity": "1"},
+            {"name": "Manteiga derretida", "quantity": "2 colheres sopa"}
+          ],
+          "instructions": [
+            "Misturar leite com vinagre e deixar repousar.",
+            "Misturar ingredientes secos.",
+            "Juntar ovo e manteiga ao leite.",
+            "Combinar tudo e cozinhar em frigideira até dourar."
+          ]
+        },
+        {
+          "id": "petit_gateau",
+          "name": "Petit Gateau",
+          "ingredients": [
+            {"name": "Chocolate", "quantity": "200 g"},
+            {"name": "Manteiga", "quantity": "2 colheres sopa"},
+            {"name": "Açúcar", "quantity": "100 g"},
+            {"name": "Ovos", "quantity": "2 + 2 gemas"},
+            {"name": "Farinha", "quantity": "2 colheres sopa"}
+          ],
+          "instructions": [
+            "Derreter chocolate com manteiga.",
+            "Bater ovos com açúcar.",
+            "Misturar tudo e juntar farinha.",
+            "Levar ao forno 10–20 min a 180ºC."
+          ]
+        },
+        {
+          "id": "sonhos",
+          "name": "Sonhos",
+          "ingredients": [
+            {"name": "Farinha", "quantity": "200 g"},
+            {"name": "Água", "quantity": "2 dl"},
+            {"name": "Manteiga", "quantity": "75 g"},
+            {"name": "Ovos", "quantity": "5"},
+            {"name": "Casca de limão", "quantity": "2"},
+            {"name": "Sal", "quantity": "1 colher café"}
+          ],
+          "instructions": [
+            "Ferver água com manteiga e limão.",
+            "Adicionar farinha e mexer.",
+            "Juntar ovos um a um.",
+            "Fritar em óleo formando bolas."
+          ]
+        },
+        {
+          "id": "eclairs",
+          "name": "Éclairs",
+          "sections": [
+            {
+              "name": "Massa",
+              "ingredients": [
+                {"name": "Farinha", "quantity": "200 g"},
+                {"name": "Manteiga", "quantity": "75 g"},
+                {"name": "Ovos", "quantity": "5"},
+                {"name": "Leite", "quantity": "125 ml"},
+                {"name": "Água", "quantity": "125 ml"}
+              ]
+            },
+            {
+              "name": "Recheio",
+              "ingredients": [
+                {"name": "Leite", "quantity": "4 dl"},
+                {"name": "Gemas", "quantity": "5"},
+                {"name": "Açúcar", "quantity": "150 g"},
+                {"name": "Farinha", "quantity": "1 colher sopa"}
+              ]
+            }
+          ],
+          "instructions": [
+            "Preparar massa choux.",
+            "Formar éclairs e levar ao forno.",
+            "Preparar creme.",
+            "Rechear e cobrir com fondant."
+          ]
+        },
+        {
+          "id": "pasteis_de_nata",
+          "name": "Pastéis de Nata",
+          "ingredients": [
+            {"name": "Leite", "quantity": "1 l"},
+            {"name": "Açúcar", "quantity": "500 g"},
+            {"name": "Farinha Maizena", "quantity": "100 g"},
+            {"name": "Ovos", "quantity": "2"},
+            {"name": "Gemas", "quantity": "10"},
+            {"name": "Massa folhada", "quantity": "500 g"}
+          ],
+          "instructions": [
+            "Ferver leite com limão.",
+            "Misturar açúcar e farinha.",
+            "Juntar ovos.",
+            "Forrar formas com massa.",
+            "Levar ao forno a 240ºC até dourar."
+          ]
         }
+
       ]
     },
     {
@@ -261,18 +385,104 @@ export const all_receitas = [{
           "name": "Tarte de Maçã"
         }
       ]
-    },
+    },    
     {
       "id": "doces",
       "name": "Doces de Colher e Pudins",
       "recipes": [
-        {"id": "leite_creme", "name": "Leite-Creme"},
-        {"id": "mousse_chocolate", "name": "Mousse de Chocolate"},
-        {"id": "mousse_manga", "name": "Mousse de Manga"},
-        {"id": "mousse_lima", "name": "Mousse de Lima"},
-        {"id": "arroz_doce", "name": "Arroz Doce"},
-        {"id": "pudim_flan", "name": "Pudim Flan"},
-        {"id": "pudim_cafe", "name": "Pudim de Café"}
+        {
+          "id": "leite_creme",
+          "name": "Leite-Creme",
+          "ingredients": [
+            {"name": "Leite", "quantity": "1 l"},
+            {"name": "Açúcar", "quantity": "250 g"},
+            {"name": "Gemas", "quantity": "8"},
+            {"name": "Maizena", "quantity": "2 colheres sopa"}
+          ],
+          "instructions": [
+            "Ferver leite com limão e canela.",
+            "Misturar gemas, açúcar e farinha.",
+            "Engrossar ao lume.",
+            "Queimar açúcar por cima."
+          ]
+        },
+        {
+          "id": "mousse_chocolate",
+          "name": "Mousse de Chocolate",
+          "ingredients": [
+            {"name": "Chocolate", "quantity": "250 g"},
+            {"name": "Ovos", "quantity": "5"},
+            {"name": "Açúcar", "quantity": "3 colheres sopa"}
+          ],
+          "instructions": [
+            "Bater gemas com açúcar.",
+            "Juntar chocolate derretido.",
+            "Adicionar claras em castelo.",
+            "Levar ao frio."
+          ]
+        },
+        {
+          "id": "mousse_manga",
+          "name": "Mousse de Manga",
+          "ingredients": [
+            {"name": "Gelatina", "quantity": "1"},
+            {"name": "Polpa de manga", "quantity": "q.b."},
+            {"name": "Leite condensado", "quantity": "1 lata"},
+            {"name": "Natas", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Preparar gelatina.",
+            "Misturar com manga.",
+            "Adicionar restantes ingredientes.",
+            "Levar ao frio."
+          ]
+        },
+        {
+          "id": "arroz_doce",
+          "name": "Arroz Doce",
+          "ingredients": [
+            {"name": "Arroz", "quantity": "125 g"},
+            {"name": "Leite", "quantity": "7.5 dl"},
+            {"name": "Açúcar", "quantity": "150 g"},
+            {"name": "Gemas", "quantity": "5"}
+          ],
+          "instructions": [
+            "Cozer arroz.",
+            "Adicionar leite e açúcar.",
+            "Juntar gemas.",
+            "Polvilhar com canela."
+          ]
+        },
+        {
+          "id": "pudim_flan",
+          "name": "Pudim Flan",
+          "ingredients": [
+            {"name": "Ovos", "quantity": "6"},
+            {"name": "Leite", "quantity": "5 dl"},
+            {"name": "Açúcar", "quantity": "6 colheres sopa"}
+          ],
+          "instructions": [
+            "Misturar ingredientes.",
+            "Levar ao forno em banho-maria.",
+            "Arrefecer antes de desenformar."
+          ]
+        },
+        {
+          "id": "pudim_cafe",
+          "name": "Pudim de Café",
+          "ingredients": [
+            {"name": "Gemas", "quantity": "6"},
+            {"name": "Leite", "quantity": "5 dl"},
+            {"name": "Café", "quantity": "75 g"},
+            {"name": "Açúcar", "quantity": "225 g"}
+          ],
+          "instructions": [
+            "Infundir café no leite.",
+            "Misturar com gemas e açúcar.",
+            "Levar ao banho-maria.",
+            "Arrefecer antes de servir."
+          ]
+        }
       ]
     },
     {
@@ -467,43 +677,7 @@ export const all_receitas = [{
       ]
     }
     
-    // {
-    //   "id": "carnes",
-    //   "name": "Carnes",
-    //   "recipes": [
-    //     {"id": "peru_recheado", "name": "Peru Recheado"},
-    //     {"id": "carne_assada_forno", "name": "Carne Assada no Forno"},
-    //     {"id": "perna_borrego_forno", "name": "Perna de Borrego no Forno"},
-    //     {"id": "feijoada", "name": "Feijoada"},
-    //     {"id": "gulash", "name": "Gulash"},
-    //     {"id": "arroz_de_pato", "name": "Arroz de Pato"},
-    //     {"id": "almondegas", "name": "Almôndegas"},
-    //     {"id": "empada", "name": "Empada"},
-    //     {"id": "rolo_de_carne", "name": "Rolo de Carne Picada"},
-    //     {"id": "croquetes", "name": "Croquetes de Carne"}
-    //   ]
-    // },
-    // {
-    //   "id": "peixe_marisco",
-    //   "name": "Peixes e Mariscos",
-    //   "recipes": [
-    //     {"id": "bacalhau_gomes_sa", "name": "Bacalhau à Gomes de Sá"},
-    //     {"id": "bacalhau_bras", "name": "Bacalhau à Brás"},
-    //     {"id": "pudim_peixe", "name": "Pudim de Peixe"},
-    //     {"id": "pasteis_bacalhau", "name": "Pastéis de Bacalhau"},
-    //     {"id": "pataniscas", "name": "Pataniscas de Bacalhau"},
-    //     {"id": "souffle_atum", "name": "Soufflé de Atum"},
-    //     {"id": "ovos_verdes", "name": "Ovos Verdes"},
-    //     {"id": "arroz_marisco", "name": "Arroz de Marisco"}
-    //   ]
-    // }
+    
   ]
 }]
 
-
-
-
-
-
-    
- 

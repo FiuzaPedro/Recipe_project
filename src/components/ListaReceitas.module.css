@@ -23,6 +23,7 @@
         transition: 0.5s ease-in-out all;                
     }
 }
+#toggle_menu { transition: 0.5s ease-in-out all;}
 .menu_wrapper { & span {display: none;}}
 .active {
     background-color: oklch(76.9% 0.188 70.08);
@@ -106,6 +107,7 @@
         animation: anim_arrow 2s;
         animation-iteration-count: infinite;
         animation-fill-mode:both ;
+        z-index: 9;
     }
     
     .receita_list_container {    

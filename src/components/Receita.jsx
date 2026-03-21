@@ -10,7 +10,7 @@ export const Receita = () => {
   },[])
   const location = useLocation();    
   
-  let { receitaname, ingredients, instructions, image } = location.state;
+  let { receitaname, ingredients, instructions, image, cooktime } = location.state;
   if(ingredients === undefined || instructions === undefined) {
     return <h1 className='bg-red-600 text-white p-10 text-6xl'>Esta receita ainda não tem os dados respectivos!</h1>
   };
@@ -31,7 +31,7 @@ export const Receita = () => {
       <section className="receita flex ">
         <img src={getImageUrl( image )} alt="current recipe image" />
         <div className='details_wrapper'>
-          <h1 className='text-4xl title_heading mb-3'>Receita {receitaname}</h1>
+          <h1 className='text-4xl title_heading mb-3'>{receitaname}</h1>
           <div className="ingredients_wrapper">
             <strong className="text-2xl">
               <i className="text-red-500 fa-solid fa-spoon mr-2"></i>
@@ -46,6 +46,11 @@ export const Receita = () => {
               })}
             </ul>
             <strong className="text-2xl">
+              <i className="text-red-500 fa-solid fa-clock mr-2"></i>
+              Tempo
+            </strong>
+            <p className='mt-3 mb-10 italic'>{cooktime}</p>
+            <strong className="text-2xl">
               <i className="text-red-500 fa-solid fa-mortar-pestle mr-2"></i>
               Como fazer
             </strong>
@@ -59,7 +64,7 @@ export const Receita = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -102,7 +102,7 @@
         display: block;
         position: fixed;
         bottom: 0;
-        left: 85%;        
+        left: 80%;        
         height: 100px; width: 100px;
         animation: anim_arrow 2s;
         animation-iteration-count: infinite;
@@ -126,7 +126,7 @@
         justify-content:flex-start;        
         width: 100%;        
         font-size: 12px;    
-        & li {border-radius: 0px;}    
+        & li {border-radius: 0px; font-size: 18px;}    
         & li:hover {            
             border-radius: 0px;
         }    

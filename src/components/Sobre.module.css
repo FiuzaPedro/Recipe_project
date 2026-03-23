@@ -74,6 +74,23 @@
     text-transform: capitalize;
     transition: 0.5s ease-in-out;
     z-index: 1111;
+    &::before {
+      position: absolute;
+      content: "";      
+      height: 0;
+      width: 0;
+      background-color: black;
+      color: oklch(76.9% 0.188 70.08);
+      top: 0;
+      left: 0;
+      font-size: 0;
+      transition: .4s ease-in-out all;
+    }
+    &:hover::before {    
+      content: "Lista de Receitas";
+      height: 100%; width: 100%;
+      font-size: 22px;
+    }
 }
 @media screen and (max-width: 850px) {
   .div_sobre {

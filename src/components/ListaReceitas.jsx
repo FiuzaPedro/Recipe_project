@@ -60,7 +60,7 @@ export const ListaReceitas = () => {
       </div>
       <ul className='receita_list' id='receita_list'>        
         {all_receitas[0].categories.map((cat, key) => {
-            return <li key={key} className='categoria_item p-2 text-xl'>
+            return <li key={key} className='categoria_item p-2 '>
               <a onClick={openReceitasByCategory} id={cat.id} className='categoria_link p-3' href="#">{cat.name}</a>
               </li>
         })}
@@ -78,7 +78,15 @@ export const ListaReceitas = () => {
             
             return <div key={key} className=' text-white receita_card'>
               <h2 className='text-2xl'>{value.name}</h2>
-              <img src={getImageUrl( value.id +'.png')} alt="respective recipe image" />                            
+              {getImageUrl(value.id + '.png').split('/src/')[1] !== 'undefined' ?
+                <img src={getImageUrl( value.id +'.png')} alt="respective recipe image" /> 
+              :
+                <span className='p-3 bg-gray-300 flex items-center rounded'>
+                  <i className="fa-solid fa-heart-crack  text-3xl text-red-500"></i>Imagem não disponível
+                  </span>
+              }
+              
+              
               <Link 
                 to="/receita" 
                 state={{ image: value.id +'.png', receitaname: value.name, ingredients: value.ingredients, instructions: value.instructions, cooktime: value.cookTime }} 

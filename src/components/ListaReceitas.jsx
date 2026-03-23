@@ -78,6 +78,8 @@ export const ListaReceitas = () => {
             
             return <div key={key} className=' text-white receita_card'>
               <h2 className='text-2xl'>{value.name}</h2>
+              {console.log(getImageUrl(value.id + '.png').split('/src/'))
+              }
               {getImageUrl(value.id + '.png').split('/src/')[1] !== 'undefined' ?
                 <img src={getImageUrl( value.id +'.png')} alt="respective recipe image" /> 
               :

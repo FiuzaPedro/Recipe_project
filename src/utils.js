@@ -1,3 +1,6 @@
 export const getImageUrl = (path) => {    
-    return new URL(`./assets/img/${path}`, import.meta.url).href;
+    let currentURL = new URL(`./assets/img/${path}`, import.meta.url).href;
+    // let stateOfImg =currentURL.includes('undefined');
+    
+    return currentURL;
 };

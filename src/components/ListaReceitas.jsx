@@ -77,18 +77,14 @@ export const ListaReceitas = () => {
             currentIngredients.push(value.ingredients);
             
             return <div key={key} className=' text-white receita_card'>
-              <h2 className='text-2xl'>{value.name}</h2>
-              {console.log(getImageUrl(value.id + '.png').split('/src/'))
-              }
-              {getImageUrl(value.id + '.png').split('/src/')[1] !== 'undefined' ?
-                <img src={getImageUrl( value.id +'.png')} alt="respective recipe image" /> 
-              :
+              <h2 className='text-2xl'>{value.name}</h2>              
+              {getImageUrl(value.id + '.png').includes('undefined') ?
                 <span className='p-3 bg-gray-300 flex items-center rounded'>
                   <i className="fa-solid fa-heart-crack  text-3xl text-red-500"></i>Imagem não disponível
                   </span>
+                :
+                  <img src={getImageUrl( value.id +'.png')} alt="respective recipe image" /> 
               }
-              
-              
               <Link 
                 to="/receita" 
                 state={{ image: value.id +'.png', receitaname: value.name, ingredients: value.ingredients, instructions: value.instructions, cooktime: value.cookTime }} 

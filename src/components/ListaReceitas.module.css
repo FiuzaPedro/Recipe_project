@@ -107,7 +107,7 @@
         animation: anim_arrow 2s;
         animation-iteration-count: infinite;
         animation-fill-mode:both ;
-        z-index: 9;
+        z-index: 999999;
     }
     
     .receita_list_container {    

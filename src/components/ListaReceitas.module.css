@@ -34,7 +34,7 @@
 .all_receitas_wrapper {    
     position: relative;
     z-index: 1;
-    height: 1000px;   
+    height: 200vh;     
     width: 100%;         
     padding: 10px;
     color: floralwhite;

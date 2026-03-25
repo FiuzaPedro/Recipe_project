@@ -12,8 +12,12 @@ export const Sobre = () => {
             <div className="welcome_text_wrapper">
                  <div className="title-sec">
                     <h2 className="title_heading text-5xl">Acerca das receitas</h2>
-                        <p className='underline text-xl mt-2'>São de autoria totalmente caseira e de qualidade assegurada</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.</p>                        
+                        <p className='underline text-xl my-2'>São de autoria totalmente caseira e de qualidade assegurada</p>
+                        <blockquote className='text-xl italic'>
+                            <i className="fa-solid fa-quote-left text-2xl"></i>Sempre gostei de cozinhar e estas receitas de comidas e doces foram escolhidas por serem as minhas preferidas para oferecer aos meus filhos e netos. Mas espero que quem as leia fique motivado para as querer passar do papel para o tacho.
+                            <i className="fa-solid fa-quote-right text-2xl"></i>
+                        </blockquote>
+                        <p className='chef text-3xl'><em className='flex items-center'><img className='h-10 inline mr-1' src={getImageUrl('food.png')} alt="cook hat icon" />Isabel</em></p>
                         <a href="/receitas" className="btn_lista_receitas">Lista de Receitas</a>
                 </div>
             </div>

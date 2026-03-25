@@ -29,7 +29,13 @@ export const Receita = () => {
         </a>
       </div>
       <section className="receita flex ">
-        <img src={getImageUrl( image )} alt="current recipe image" />
+        {getImageUrl(image).includes('undefined') ?
+          <span className='p-3 bg-gray-300 flex items-center rounded font-bold mr-6'>
+            <i className="fa-solid fa-heart-crack  text-3xl text-red-500"></i>Imagem não disponível
+          </span>
+          :
+          <img src={getImageUrl(image)} alt="current recipe image" /> 
+        }        
         <div className='details_wrapper'>
           <h1 className='text-4xl title_heading mb-3'>{receitaname}</h1>
           <div className="ingredients_wrapper">

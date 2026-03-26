@@ -1,8 +1,32 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import { getImageUrl } from '../utils'
-export const Sobre = () => {
+export const Sobre = () => {    
+    var indice = 0;
+    function slideshow() {
+    let sobre = document.getElementById('div_sobre');    
+    let arrayImages = [
+        getImageUrl('pao.png'),
+        getImageUrl('tarte_de_maca.png'),
+        getImageUrl('paella.png')   
+        ];        
+    
+        sobre.style.backgroundPosition = "-150vw";
+        setTimeout(() => {
+            sobre.style.backgroundImage = "url('"+ arrayImages[indice] +"')" ;
+            sobre.style.backgroundPosition = "center";    
+            indice+=1;
+        }, 2500);        
+        if (indice === 3) {
+            indice = 0
+        }
+    }
+
+    useEffect(() => {        
+        setInterval(slideshow, 7500)
+    },[])
+    
     return<>
-        <div className='div_sobre flex'>
+        <div className='div_sobre flex' id='div_sobre'>
             <h2 className='text-6xl text-white'>Receitas caseiras da Isa</h2>
         </div>
         <div className='welcome_card flex p-6'>

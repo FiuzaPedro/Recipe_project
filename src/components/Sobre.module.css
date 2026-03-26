@@ -1,9 +1,10 @@
 .div_sobre {
   background-image: url('../assets/img/paella.jpg');
   background-size: cover;   
+  background-repeat: no-repeat;    
   height: 100vh;
   animation: anim_sobre 2s;
-  
+  transition: all .8s linear;
   & h2 {
     display: flex;
     background-color: rgba(0, 0, 0, 0.5);    

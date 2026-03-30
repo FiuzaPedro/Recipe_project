@@ -34,7 +34,7 @@ export const Receita = () => {
             <i className="fa-solid fa-heart-crack  text-3xl text-red-500"></i>Imagem não disponível
           </span>
           :
-          <img src={getImageUrl(image)} alt="current recipe image" /> 
+          <img id='receita_img' src={getImageUrl(image)} alt="current recipe image" /> 
         }        
         <div className='details_wrapper'>
           <h1 className='text-4xl title_heading mb-3'>{receitaname}</h1>
@@ -45,7 +45,7 @@ export const Receita = () => {
             </strong>
             <ul className='mt-3 mb-10'>
               {ingredients.map((value, key)=> {
-                return  <li key={key}>
+                return  <li className='li_animated' key={key}>
                   <i className="fa-solid fa-circle mr-3"></i>
                   {value.name}
                 </li>
@@ -62,7 +62,7 @@ export const Receita = () => {
             </strong>
             <ol className='instructions_list mt-3'>
               {instructions.map((value, key)=> {
-                  return  <li key={key}>
+                  return  <li className='li_animated' key={key}>
                     {value}
                   </li>
                 })}

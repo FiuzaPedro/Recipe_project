@@ -53,3 +53,29 @@
     }
     }
 }
+
+#receita_img {
+    animation-name: anim_img;
+    animation-duration: 1.5s;
+    border-radius: 10px;
+}
+strong {
+    animation-name: anim_titles;
+    animation-duration: 1.5s;
+}
+.li_animated {
+    animation-name: anim_details;
+    animation-duration: 1.5s;
+}
+@keyframes anim_img {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes anim_titles {
+    0% {margin-left: -100%;}
+    100% {margin-left: 0;}
+}
+@keyframes anim_details {
+    0% {margin-left: 200%;}
+    100% {margin-left: 0;}
+}

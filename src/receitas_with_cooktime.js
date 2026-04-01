@@ -262,7 +262,6 @@ export const all_receitas = [{
             "Levar ao forno a 240ºC até dourar."
           ]
         }
-
       ]
     },
     {
@@ -342,8 +341,8 @@ export const all_receitas = [{
             {"name": "Bolacha Maria", "quantity": "200 gr"},
             {"name": "Ovos", "quantity": "3"},
             {"name": "Limões médios", "quantity": "2"},
-            {"name": "Lata de leite condensado", "quantity" : "1"},
-            {"name": "Colheres de sopa de açúcar", "quantity" : "2"}
+            {"name": "Lata de leite condensado", "quantity": "1"},
+            {"name": "Colheres de sopa de açúcar", "quantity": "2"}
           ],
           "instructions": [
             "Picar bolachas.",
@@ -357,23 +356,23 @@ export const all_receitas = [{
           "id": "tarte_de_pinhao",
           "name": "Tarte de Pinhão",
           "cookTime": "45 minutos",
-          "ingredients":[
-            { "name": "Farinha (para a massa)", "quantity": "200g"},
-            { "name": "Margarina (para a massa)", "quantity": "100g"},
-            { "name": "Ovos (para a massa)", "quantity": "1"},
-            { "name": "Fermento (para a massa)", "quantity": "1 colher de chá"},            
-            { "name": "Açúcar (para a massa)", "quantity": "100g"},
-            { "name": "Açúcar (para o recheio)", "quantity": "100g"},
-            { "name": "Manteiga Derretida (para o recheio)", "quantity": "125g"},
-            { "name": "Pinhões (para o recheio)", "quantity": "100g ou mais"},
-            { "name": "Leite (para o recheio)", "quantity": "4 colheres de sopa"},
+          "ingredients": [
+            {"name": "Farinha (para a massa)", "quantity": "200g"},
+            {"name": "Margarina (para a massa)", "quantity": "100g"},
+            {"name": "Ovos (para a massa)", "quantity": "1"},
+            {"name": "Fermento (para a massa)", "quantity": "1 colher de chá"},            
+            {"name": "Açúcar (para a massa)", "quantity": "100g"},
+            {"name": "Açúcar (para o recheio)", "quantity": "100g"},
+            {"name": "Manteiga Derretida (para o recheio)", "quantity": "125g"},
+            {"name": "Pinhões (para o recheio)", "quantity": "100g ou mais"},
+            {"name": "Leite (para o recheio)", "quantity": "4 colheres de sopa"}
           ],
           "instructions": [
             "Para o recheio, misturar tudo e levar ao lume até ficar espesso.",
             "Amassar um pouco os ingredientes.",
             "Deixar descansar uns minutos.",
             "Untar uma forma de tarte (ou usar papel vegetal para cobrir a forma), cobrir com a massa e encher com o recheio.",
-            "ai ao forno alguns minutos para cozer a massa (10-20 min).",
+            "Levar ao forno alguns minutos para cozer a massa (10-20 min).",
             "Observação: Se for tarte de amêndoas, deixar mais tempo no forno."
           ]
         },
@@ -386,9 +385,9 @@ export const all_receitas = [{
             {"name": "Bolacha de aveia", "quantity": "10"},
             {"name": "Requeijão", "quantity": "350g"},
             {"name": "Limões", "quantity": "1 a 2"},
-            {"name": "Gelatina", "quantity": "15 g "},
+            {"name": "Gelatina", "quantity": "15 g"},
             {"name": "Gemas", "quantity": "2"},
-            {"name": "Nata", "quantity": "1,5 dl "},
+            {"name": "Nata", "quantity": "1,5 dl"},
             {"name": "Açúcar", "quantity": "115g"}
           ],
           "instructions": [
@@ -402,7 +401,22 @@ export const all_receitas = [{
         {
           "id": "tarte_de_maca",
           "name": "Tarte de Maçã",
-          "cookTime": "60 minutos"
+          "cookTime": "60 minutos",
+          "ingredients": [
+            {"name": "Farinha", "quantity": "300 g"},
+            {"name": "Manteiga", "quantity": "150 g"},
+            {"name": "Açúcar", "quantity": "100 g"},
+            {"name": "Ovos", "quantity": "1"},
+            {"name": "Maçãs", "quantity": "4-5"},
+            {"name": "Canela", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Preparar massa folhada ou areada.",
+            "Descascar e cortar maçãs em laminas finas.",
+            "Dispor maçãs sobre a massa.",
+            "Polvilhar com açúcar e canela.",
+            "Levar ao forno até estar dourada."
+          ]
         }
       ]
     },    
@@ -456,6 +470,23 @@ export const all_receitas = [{
           "instructions": [
             "Preparar gelatina.",
             "Misturar com manga.",
+            "Adicionar restantes ingredientes.",
+            "Levar ao frio."
+          ]
+        },
+        {
+          "id": "mousse_lima",
+          "name": "Mousse de Lima",
+          "cookTime": "4 horas (incluindo refrigeração)",
+          "ingredients": [
+            {"name": "Gelatina", "quantity": "1"},
+            {"name": "Sumo de lima", "quantity": "200 ml"},
+            {"name": "Leite condensado", "quantity": "1 lata"},
+            {"name": "Natas", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Preparar gelatina.",
+            "Misturar com sumo de lima.",
             "Adicionar restantes ingredientes.",
             "Levar ao frio."
           ]
@@ -639,11 +670,84 @@ export const all_receitas = [{
             "Fazer refogado.",
             "Levar ao forno."
           ]
+        },
+        {
+          "id": "almondegas",
+          "name": "Almôndegas",
+          "cookTime": "45 minutos",
+          "ingredients": [
+            {"name": "Carne moída", "quantity": "500 g"},
+            {"name": "Pão", "quantity": "2 fatias"},
+            {"name": "Ovos", "quantity": "1"},
+            {"name": "Alho", "quantity": "2 dentes"},
+            {"name": "Salsa", "quantity": "q.b."},
+            {"name": "Sal e pimenta", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Misturar carne com pão molhado.",
+            "Adicionar ovos e temperos.",
+            "Formar bolinhas.",
+            "Fritar ou cozinhar em molho."
+          ]
+        },
+        {
+          "id": "empada",
+          "name": "Empada",
+          "cookTime": "1 hora",
+          "ingredients": [
+            {"name": "Massa folhada", "quantity": "q.b."},
+            {"name": "Frango desfiado", "quantity": "q.b."},
+            {"name": "Creme de leite", "quantity": "q.b."},
+            {"name": "Ovos", "quantity": "2"},
+            {"name": "Azeitonas", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Preparar recheio com frango e creme.",
+            "Forrar forma com massa.",
+            "Rechear e cobrir com massa.",
+            "Levar ao forno até dourar."
+          ]
+        },
+        {
+          "id": "rolo_de_carne",
+          "name": "Rolo de Carne Picada",
+          "cookTime": "1 hora 30 minutos",
+          "ingredients": [
+            {"name": "Carne picada", "quantity": "1 kg"},
+            {"name": "Presunto", "quantity": "q.b."},
+            {"name": "Queijo", "quantity": "q.b."},
+            {"name": "Ovos", "quantity": "2"},
+            {"name": "Pão ralado", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Estender carne.",
+            "Rechear com presunto e queijo.",
+            "Enrolar e amarrar.",
+            "Levar ao forno."
+          ]
+        },
+        {
+          "id": "croquetes",
+          "name": "Croquetes de Carne",
+          "cookTime": "45 minutos",
+          "ingredients": [
+            {"name": "Carne cozida", "quantity": "300 g"},
+            {"name": "Molho bechamel", "quantity": "q.b."},
+            {"name": "Ovos", "quantity": "2"},
+            {"name": "Pão ralado", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Desfiar carne.",
+            "Misturar com molho bechamel.",
+            "Formar croquetes.",
+            "Passar por ovo e pão ralado.",
+            "Fritar."
+          ]
         }
       ]
     },
     {
-      "id": "peixes_mariscos",
+      "id": "peixe_marisco",
       "name": "Peixes e Mariscos",
       "recipes": [
         {
@@ -679,6 +783,24 @@ export const all_receitas = [{
           ]
         },
         {
+          "id": "pudim_peixe",
+          "name": "Pudim de Peixe",
+          "cookTime": "45 minutos",
+          "ingredients": [
+            {"name": "Peixe cozido", "quantity": "300 g"},
+            {"name": "Pão", "quantity": "200 g"},
+            {"name": "Leite", "quantity": "500 ml"},
+            {"name": "Ovos", "quantity": "3"},
+            {"name": "Salsa", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Desfiar peixe.",
+            "Misturar com pão molhido.",
+            "Adicionar ovos e temperos.",
+            "Levar ao forno em banho-maria."
+          ]
+        },
+        {
           "id": "pasteis_bacalhau",
           "name": "Pastéis de Bacalhau",
           "cookTime": "45 minutos",
@@ -691,6 +813,57 @@ export const all_receitas = [{
             "Misturar tudo.",
             "Formar pastéis.",
             "Fritar."
+          ]
+        },
+        {
+          "id": "pataniscas",
+          "name": "Pataniscas de Bacalhau",
+          "cookTime": "30 minutos",
+          "ingredients": [
+            {"name": "Bacalhau desfiado", "quantity": "300 g"},
+            {"name": "Farinha", "quantity": "200 g"},
+            {"name": "Ovos", "quantity": "2"},
+            {"name": "Leite", "quantity": "100 ml"},
+            {"name": "Salsa", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Misturar bacalhau com massa de pataniscas.",
+            "Fritar colheradas em óleo quente.",
+            "Servir quentes."
+          ]
+        },
+        {
+          "id": "souffle_atum",
+          "name": "Soufflé de Atum",
+          "cookTime": "40 minutos",
+          "ingredients": [
+            {"name": "Atum", "quantity": "2 latas"},
+            {"name": "Molho bechamel", "quantity": "q.b."},
+            {"name": "Ovos", "quantity": "4"},
+            {"name": "Queijo ralado", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Preparar molho bechamel.",
+            "Misturar com atum.",
+            "Adicionar gemas.",
+            "Juntar claras em castelo.",
+            "Levar ao forno."
+          ]
+        },
+        {
+          "id": "ovos_verdes",
+          "name": "Ovos Verdes",
+          "cookTime": "20 minutos",
+          "ingredients": [
+            {"name": "Ovos", "quantity": "6"},
+            {"name": "Salsa", "quantity": "q.b."},
+            {"name": "Pão", "quantity": "q.b."},
+            {"name": "Caldo verde", "quantity": "q.b."}
+          ],
+          "instructions": [
+            "Cozer ovos.",
+            "Preparar molho verde.",
+            "Servir ovos com molho e pão."
           ]
         },
         {
@@ -712,7 +885,5 @@ export const all_receitas = [{
         }
       ]
     }
-    
-    
   ]
 }]

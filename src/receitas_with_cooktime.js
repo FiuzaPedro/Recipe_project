@@ -550,34 +550,30 @@ export const all_receitas = [{
           "id": "peru_recheado",
           "name": "Peru Recheado",
           "cookTime": "4 horas",
-          "sections": [
-            {
-              "name": "Recheio",
-              "ingredients": [
-                {"name": "Pão de forma", "quantity": "1 grande"},
-                {"name": "Ovos", "quantity": "5 (4 gemas + 1 inteiro)"},
-                {"name": "Miúdos de galinha ou peru", "quantity": "q.b."},
-                {"name": "Azeitonas pretas", "quantity": "q.b."},
-                {"name": "Vinagre", "quantity": "q.b."},
-                {"name": "Vinho do Porto", "quantity": "q.b."},
-                {"name": "Noz moscada", "quantity": "q.b."},
-                {"name": "Salsa", "quantity": "q.b."},
-                {"name": "Sal e pimenta", "quantity": "q.b."}
-              ]
-            },
-            {
-              "name": "Para assar",
-              "ingredients": [
-                {"name": "Tiras de bacon", "quantity": "q.b."},
-                {"name": "Toucinho", "quantity": "q.b."}
-              ]
-            }
+          "ingredients": [
+            {"name": "Pão de forma", "quantity": "1 grande"},
+            {"name": "Ovos", "quantity": "5 (4 gemas + 1 inteiro)"},
+            {"name": "Miúdos de galinha ou peru", "quantity": "q.b."},
+            {"name": "Azeitonas pretas", "quantity": "q.b."},
+            {"name": "Vinagre", "quantity": "q.b."},
+            {"name": "Vinho do Porto", "quantity": "q.b."},
+            {"name": "Noz moscada", "quantity": "q.b."},
+            {"name": "Salsa", "quantity": "q.b."},
+            {"name": "Sal e pimenta", "quantity": "q.b."},
+            {"name": "Tiras de bacon", "quantity": "q.b."},
+            {"name": "Toucinho", "quantity": "q.b."}
           ],
           "instructions": [
-            "Marinar o peru de véspera em água salgada com limão.",
-            "Preparar o recheio com pão, miúdos e temperos.",
-            "Rechear o peru e coser as aberturas.",
-            "Cobrir com bacon e assar a 190ºC por cerca de 3–3.5h."
+            `Para assar o perú: 1 embalagem grande de tiras de bacon, q.b. de toucinho em tiras 
+De véspera, mergulhar o peru em água saturada de sal (controlar a saturação de modo a que um ovo cru flutue na água salgada); adicionar rodelas de limão (e ervas aromáticas) para dar gosto. Fica durante a noite, a marinar.
+
+Recheio:
+Cozer as miudezas em água (apenas a suficiente para amolecer um pão de forma grande sem côdea) . Cortam-se em pedaços pequenos e guarda-se a água da cozedura.
+Esfarela-se o pão de forma e vai-se adicionando a água da cozedura, até se obter uma consistência adequada de açorda. 
+Faz-se um refogado e juntam-se, no tacho, a açorda e as miudezas, e depois as gemas e o ovo completo.Adicionam-se as azeitonas, cortadas em pedaços pequenos, a salsa picada e os temperos(noz moscada, sal, pimenta, vinagre) e vinho do Porto, a gosto.
+
+Encher as cavidades do peru com o recheio, coser as aberturas com linha e agulha.Cobrir com as tiras de bacon e o toucinho. Vai a assar no forno (~190º), havendo o cuidado de ir regando com o molho. O tempo para ficar cozinhado depende do tamanho do perú (4 kg : ~ 3 a 3,5 h).
+`
           ]
         },
         {

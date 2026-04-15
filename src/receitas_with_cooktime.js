@@ -880,6 +880,194 @@ Encher as cavidades do peru com o recheio, coser as aberturas com linha e agulha
           ]
         }
       ]
+    },
+     {
+      "id": "diversos",
+      "name": "Diversos",
+      "recipes": [
+        {
+          "id": "massa-areada",
+          "name": "Massa Areada (Base)",
+          "cookTime": "1h 25min",
+          "ingredients": [
+            { "name": "Farinha", "quantity": "250 g" },
+            { "name": "Margarina", "quantity": "125 g" },
+            { "name": "Açúcar", "quantity": "120 g" },
+            { "name": "Ovo", "quantity": "1" },
+            { "name": "Sal", "quantity": "q.b." }
+          ],
+          "instructions": [
+            "Misturar farinha e açúcar e fazer uma cova.",
+            "Adicionar ovo e sal.",
+            "Misturar ligeiramente.",
+            "Adicionar margarina até textura de areia.",
+            "Formar bola e descansar 1 hora.",
+            "Estender e levar ao forno 20-25 minutos."
+          ]
+        },
+        {
+          "id": "fios-de-ovos",
+          "name": "Fios de Ovos",
+          "cookTime": "30min",
+          "ingredients": [
+            { "name": "Gemas", "quantity": "12" },
+            { "name": "Ovo", "quantity": "1" },
+            { "name": "Açúcar", "quantity": "500 g" },
+            { "name": "Água", "quantity": "150 g" }
+          ],
+          "instructions": [
+            "Bater e coar as gemas.",
+            "Fazer calda de açúcar.",
+            "Adicionar gemas com funil.",
+            "Cozer 1 minuto.",
+            "Arrefecer em água com gelo."
+          ]
+        },
+        {
+          "id": "pao",
+          "name": "Pão",
+          "cookTime": "3h",
+          "ingredients": [
+            { "name": "Fermento", "quantity": "30 g" },
+            { "name": "Líquidos", "quantity": "4 chávenas" },
+            { "name": "Farinha", "quantity": "q.b." }
+          ],
+          "instructions": [
+            "Ativar fermento.",
+            "Misturar ingredientes.",
+            "Amassar.",
+            "Levedar 2 vezes.",
+            "Cozer 40 minutos."
+          ]
+        },
+        {
+          "id": "doce-laranja",
+          "name": "Doce de Laranja Amarga",
+          "cookTime": "2h 30min",
+          "ingredients": [
+            { "name": "Laranjas", "quantity": "1,5 kg" },
+            { "name": "Limões", "quantity": "2" },
+            { "name": "Água", "quantity": "3 L" },
+            { "name": "Açúcar", "quantity": "3 kg" }
+          ],
+          "instructions": [
+            "Preparar frutas e cascas.",
+            "Ferver ~2h.",
+            "Adicionar açúcar.",
+            "Ferver até ponto."
+          ]
+        },
+        {
+          "id": "sopa-caril",
+          "name": "Sopa de Caril",
+          "cookTime": "25min",
+          "ingredients": [
+            { "name": "Farinha", "quantity": "1 colher" },
+            { "name": "Manteiga", "quantity": "1 colher" },
+            { "name": "Caril", "quantity": "2 colheres chá" }
+          ],
+          "instructions": [
+            "Fazer base com manteiga, farinha e caril.",
+            "Adicionar água e caldo.",
+            "Cozinhar 15 min.",
+            "Adicionar gemas e natas."
+          ]
+        },
+        {
+          "id": "tarte-espinafres",
+          "name": "Tarte de Queijo e Espinafres",
+          "cookTime": "40min",
+          "ingredients": [
+            { "name": "Massa folhada", "quantity": "1" },
+            { "name": "Espinafres", "quantity": "q.b." },
+            { "name": "Bacon", "quantity": "q.b." }
+          ],
+          "instructions": [
+            "Preparar base.",
+            "Fritar recheio.",
+            "Misturar ovos, natas e queijo.",
+            "Levar ao forno."
+          ]
+        },
+        {
+          "id": "escabeche",
+          "name": "Molho de Escabeche",
+          "cookTime": "20min",
+          "ingredients": [
+            { "name": "Cebolas", "quantity": "2" },
+            { "name": "Azeite", "quantity": "1,5 dl" },
+            { "name": "Vinagre", "quantity": "4 colheres" }
+          ],
+          "instructions": [
+            "Refogar cebola e alho.",
+            "Adicionar temperos.",
+            "Juntar vinagre.",
+            "Aplicar quente."
+          ]
+        }
+      ]
+    },
+    {
+      "id" : "massas",
+      "name": "Massas",
+      "recipes": [
+        {
+          "id": "massa-quebrada",
+          "name": "Massa Quebrada",
+          "cookTime": "30min",
+          "ingredients": [
+            { "name": "Farinha", "quantity": "450 g" },
+            { "name": "Margarina", "quantity": "180 g" }
+          ],
+          "instructions": [
+            "Misturar ingredientes.",
+            "Adicionar água.",
+            "Descansar 30 min."
+          ]
+        },
+        {
+          "id": "massa-tenra",
+          "name": "Massa Tenra",
+          "cookTime": "45min",
+          "ingredients": [
+            { "name": "Farinha", "quantity": "250 g" },
+            { "name": "Gordura", "quantity": "2 colheres" }
+          ],
+          "instructions": [
+            "Misturar.",
+            "Amassar.",
+            "Descansar.",
+            "Fritar."
+          ]
+        },
+        {
+          "id": "pasta-fresca",
+          "name": "Pasta Fresca",
+          "cookTime": "1h",
+          "ingredients": [
+            { "name": "Farinha", "quantity": "350 g" },
+            { "name": "Ovos", "quantity": "3" }
+          ],
+          "instructions": [
+            "Misturar.",
+            "Amassar.",
+            "Descansar no frio."
+          ]
+        },
+        {
+          "id": "lasanha",
+          "name": "Lasanha",
+          "cookTime": "1h",
+          "ingredients": [
+            { "name": "Massa", "quantity": "q.b." },
+            { "name": "Molhos", "quantity": "q.b." }
+          ],
+          "instructions": [
+            "Fazer camadas.",
+            "Levar ao forno."
+          ]
+        }
+      ]
     }
   ]
 }]
